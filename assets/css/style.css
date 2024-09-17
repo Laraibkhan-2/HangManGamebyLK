@@ -1,0 +1,197 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    }
+    body{
+        background-color: rgb(15, 28, 65);
+    }
+    .container{
+        font-size: 16px;
+        background-color: rgb(37, 52, 95);
+        width: 90vw;
+        max-width: 34em;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        padding: 3em;
+        border-radius: 2em;
+        box-shadow: 0 1.2em 2.4em rgba(6, 42, 88, 0.25);
+    }
+    #options-container {
+        text-align: center;
+        font-size: 23PX;
+    }
+    #options-container div {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin: 1.2em 0 2.4em 0;
+    }
+    #options-container button {
+        padding: 0.6em 1.2em;
+        border: 3px solid #000000;
+        background-color: #000;
+        color: #ffffff;
+        font-size: 20px;
+        border-radius: 1em;
+        text-transform: capitalize;
+    }
+    #options-container button:disabled {
+        border: 2px solid solid rgb(16, 27, 58);
+        color: rgb(15, 28, 65);
+        background-color: #ffffff;
+    }
+    #options-container button.active {
+        background-color: #05830b;
+        border: 5px solid #000000;
+        color: #ffffff;
+    }
+    .letter-container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.6em;
+    }
+    #letter-container button {
+        height: 3em;
+        width: 3em;
+        font-size: 19px;
+        border: 2px solid #000000;
+        border-radius: 0.9em;
+        background-color: #000000;
+        color: #ffffff;
+    }
+    #letter-container button:hover{
+        background-color: rgb(15, 28, 65);
+    }
+    .new-game-popup {
+        background-color: rgb(37, 52, 95);
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 2em;
+    }
+    #user-input-section {
+        display: flex;
+        justify-content: center;
+        font-size: 1.8em;
+        margin: 0.6em 0 1.2em 0;
+    }
+    canvas{
+        display: block;
+        margin: auto;
+        border: 2px solid #ffffff;
+    }
+    .hide{
+        display: none;
+    }
+    #result-text h2 {
+        font-size: 3em;
+        text-align: center;
+    }
+    #result-text p{
+        font-size: 1.80em;
+        margin: 1em 0 2em 0;
+        color: #ffffff;
+    }
+    #result-text span{
+        font-weight: 600;
+        color: #05830b;
+    }
+    #new-game-button{
+        font-size: 1.25em;
+        padding: 0.5em 1em;
+        background-color: rgb(15, 28, 65);
+        border: 3px solid #000000;
+        color: #ffffff;
+        border-radius: 2em;
+    }
+    .win-msg{
+        color: #05830b;
+    }
+    .lose-msg{
+        color: #f80000;
+    }
+    @media only screen and (max-width: 600px) {
+        .container {
+          width: 100vw;
+          max-width: none;
+          padding: 2em;
+        }
+        #options-container {
+          font-size: 18px;
+        }
+        #options-container button {
+          padding: 0.4em 0.8em;
+          font-size: 16px;
+        }
+        #letter-container button {
+          height: 2.5em;
+          width: 2.5em;
+          font-size: 16px;
+        }
+        canvas {
+          width: 100%;
+          height: 200px;
+        }
+      }
+      
+      /* Medium screens (tablet) */
+      @media only screen and (min-width: 601px) and (max-width: 900px) {
+        .container {
+          width: 80vw;
+          max-width: none;
+          padding: 2.5em;
+        }
+        #options-container {
+          font-size: 20px;
+        }
+        #options-container button {
+          padding: 0.6em 1.2em;
+          font-size: 18px;
+        }
+        #letter-container button {
+          height: 3em;
+          width: 3em;
+          font-size: 18px;
+        }
+        canvas {
+          width: 100%;
+          height: 250px;
+        }
+      }
+      
+      /* Large screens (desktop) */
+      @media only screen and (min-width: 901px) {
+        .container {
+          width: 70vw;
+          max-width: none;
+          padding: 3em;
+        }
+        #options-container {
+          font-size: 22px;
+        }
+        #options-container button {
+          padding: 0.8em 1.6em;
+          font-size: 20px;
+        }
+        #letter-container button {
+          height: 3.5em;
+          width: 3.5em;
+          font-size: 20px;
+        }
+        canvas {
+          width: 100%;
+          height: 300px;
+        }
+      }
